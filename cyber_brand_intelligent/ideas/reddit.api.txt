@@ -1,0 +1,9 @@
+URL BASE - https://www.reddit.com/dev/api/
+             https://www.reddit.com/dev/api/api/v1/collections/collection
+- Controlar la paginacion se utiliza AFTER / BEFORE / LIMIT / COUNT / SHOW
+
+----------------------------
+API ACCESS RULES
+----------------------------
+
+

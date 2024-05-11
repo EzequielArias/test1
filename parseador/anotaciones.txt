@@ -1,0 +1,15 @@
+
+
+1 - Crear una funcion que reciba por parametros distantas palabras para saber si existen en el HTML
+    Preferiblemente que sean sinonimos de Gratis.
+     
+2 - En el caso de que existan algunas palabras como 2 o 3 (si la lista de palabras es muy grande)
+    scrapear el sitio web
+
+3 - buscar iframes y anchors 
+    a - primero analizar si los propios iframes o anchors no tienen URL contaminados
+    b - si no los tienen analizar las subclases y por cada sub analisis sumar 1 al depth
+
+
+
+1,2,3,4,5,6

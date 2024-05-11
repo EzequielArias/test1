@@ -1,0 +1,46 @@
+Guia paso a paso para conectarte a la api de reddit :D
+
+1 - Crear una cuenta de reddit en reddit.com
+    b - verificarla en el mail
+
+2 - ir al link https://www.reddit.com/prefs/apps y loguearte nuevamente si es necesario.
+
+3 - en la seccion de apps tocar el boton que dice "are you a developer? create an app..."
+
+4 - rellenar campos :
+    - name => elegir cualquier nombre
+    - scripts => seleccionar esta opcion
+    - redirect_url => colocar esta url "https://www.example.com/products/item"
+
+    Luego de esto le das al boton de crear app
+
+5 - En Postman arriba a la izquierda tenes la opcion File, hazle click y busca la opcion import... 
+    - En el campo donde dice paste Curl pega el siguiente comando
+    "curl -X POST -d 'grant_type=password&username=reddit_bot&password=snoo' --user 'p-jcoLKBynTLew:gko_LXELoV07ZBNUXrvWZfzE3aI' https://www.reddit.com/api/v1/access_token"
+    Se va a crear una peticion POST automaticamente en tu POSTMAN.
+
+6 - ir al apartado de Body del POSTMAN cambiar username y password por las credenciales de tu cuenta
+
+7 - ir al apartado de Authorization en POSTMAN y remplazar :
+    - El username por el personal-use-script que se encuentra en la pagina donde creaste tu aplicacion
+    - El password por el secret que se encuentra tambien en la pagina donde creaste tu aplicacion
+    (Toca el boton edit debajo del cuadro de la app si no podes ver los datos)
+    (URL de listado de tus apps : https://www.reddit.com/prefs/apps)
+
+!!! si te salio el error invalid_grant al enviar la peticion, 
+    puede ser que hayas copiado mal algunas de las credenciales o tu contraseña tiene algun caracter
+    especial que postman no detecta (como por ejemplo un @) cambiar la contraseña de ser necesario
+
+8 - al hacer la peticion vas a recibir en un JSON
+
+    access_token : "tu tk"
+    token_type : "bearer"
+    "expires_in" 86400  duracion del token solo dura 1 dia...
+    "scope" : "*"
+
+
+
+LISTA DE ENDPOINTS INTERESANTES.
+
+
+

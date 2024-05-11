@@ -1,0 +1,7 @@
+- Aplicar code scanning a repositorios de clientes
+    Cuando code scanning reporta alertas de flujo de datos, 
+    GitHub te muestra como se mueven los datos a través del código. 
+    El Code scanning te permite identificar las áreas de tu código qu
+    e filtran información sensible y que podrían ser el punto de 
+    entrada para los ataques que hagan los usuarios malintencionados.
+

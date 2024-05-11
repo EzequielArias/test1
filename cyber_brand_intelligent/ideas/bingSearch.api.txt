@@ -1,0 +1,4 @@
+- Precios de BingSearch ==> https://www.microsoft.com/en-us/bing/apis/pricing
+
+1 - Puedes hacer 1.000 request por 1 mes totalmente gratis
+
